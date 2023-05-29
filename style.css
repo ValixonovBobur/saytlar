@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+.fon{
+    background-image: url(image/fon.png);
+    width: 100%;
+    height: 1700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color:tomato ;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.fon .oshxona{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.oshxona h1:nth-child(2){
+    margin-top: -10px;
+    margin-left: 35px;
+}
+.oshxona h1{
+    font-size: 30px;
+    margin-left: 15px;
+    color: snow;
+}
+
+.link ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    height:100%;
+  
+}
+.link ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.link li a{
+   margin-left: 40px;
+    text-decoration: none;
+    color: snow;
+}
+.rasim img{
+    width: 60px;
+    margin-top: -91px;
+    margin-left: -757px;
+    position: absolute;
+   
+}
+
+.ozbegim{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/dasturxon.png") no-repeat;
+    background-size: cover;
+
+}
+.ozbegim .text-a{
+
+    color:snow;
+    font-size: 35px;
+    text-align: center;
+    
+   
+}
+
+
+.ozbegim .text-a p{
+    width: 380px;
+    font-size: 12px;
+}
+.reklama{
+    width: 90%;
+    height: 250px;
+    background-color: rgb(218, 208, 194);
+}
+.reklama .matn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.reklama .matn-a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.reklama .matn p{
+    font-size: 25px;
+}
+.reklama .matn-b{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.reklama .taomlar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 72%;
+    box-shadow: 0 0 70px snow;
+   
+}
+.reklama .taomlar img{
+    border: 10px solid blue;
+    border-radius: 80px;
+    background-image:linear-gradient(red,yellow);
+    box-shadow: 0 0 70px snow;
+    
+}
+.footer-a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 200px;
+    margin: 5%;
+    
+}
+
+.registration{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border:1px solid red;
+   padding: 5px;
+   width: 395px;
+   height: 434px;
+   background-color: cyan;
+   background-image: linear-gradient(to right, rgb(173, 173, 46),yellow);
+}
+.registration input{
+    width: 340px;
+    height: 30px;
+    margin-top: 10px;
+}
+.registration .input-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.registration button{
+    width: 100px;
+    /* margin-left: -320px; */
+    border-radius: 15px;
+    background-color: cyan;
+    background-image: linear-gradient(to right, rgb(173, 173, 46),yellow);
+}
+.qollanma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 942px;
+    height: 446px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/qollanma.png") no-repeat;
+    background-size: cover;
+   
+    
+    
+   
+}
+.qollanma .hp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 547px;
+    margin-left:150px; 
+    color: aliceblue;  
+   
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 235px;
+    background-color: rgb(95, 175, 135);
+    margin-top: 400px;
+
+}
+
+.hp-b{
+    margin-top: 11px;
+    margin-left: 20px;
+    width: 360px;
+}
+.hp-b h1{
+    color: snow;
+    position: relative;
+}
+.hp-b p{
+    color: snow;
+}
+
+.hp-b h1:nth-child(2){
+    margin-left: 25px;
+}
+.rasim-b{
+    position: absolute;
+    margin-top: -14px;
+    margin-left: -918px;
+}
+.footer .contact{
+    display: flex;
+    flex-direction: column;
+   
+    z-index: 1;
+}
+
+
+
+
